@@ -1,0 +1,6 @@
+1.- primero instalo bootstrap (https://getbootstrap.com/) -> npm i bootstrap@5.3.6
+2.- Generamos el nuevo componente login en src/app/components/login ng g c components/login --skip-tests true 
+3.- Generamos el sign-in ng g c components/signIn --skip-tests true
+4.- Generamos el dashboard ng g c components/dashboard --skip-tests true
+5.- Generamos el navbar ng g c components/navbar --skip-tests true
+6.- En interfaces exportamos product.ts y user.ts desde la base de datos

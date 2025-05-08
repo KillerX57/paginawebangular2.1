@@ -1,0 +1,111 @@
+// login.component.scss
+
+:host {
+    display: block;
+  }
+  
+  section {
+    min-height: 100vh;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    
+    @media (prefers-color-scheme: dark) {
+      background-color: #111827;
+    }
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
+    input[type="email"],
+    input[type="password"] {
+      padding: 0.625rem;
+      border-radius: 0.5rem;
+      border: 1px solid #d1d5db;
+      background-color: #f9fafb;
+      font-size: 0.875rem;
+      color: #111827;
+  
+      &:focus {
+        outline: none;
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+      }
+  
+      @media (prefers-color-scheme: dark) {
+        background-color: #374151;
+        color: #f9fafb;
+        border-color: #4b5563;
+  
+        &::placeholder {
+          color: #9ca3af;
+        }
+      }
+    }
+  
+    button {
+      background-color: #2563eb;
+      color: white;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      padding: 0.625rem;
+      font-size: 0.875rem;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #1d4ed8;
+      }
+  
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+      }
+  
+      @media (prefers-color-scheme: dark) {
+        background-color: #2563eb;
+  
+        &:hover {
+          background-color: #1d4ed8;
+        }
+      }
+    }
+  }
+  
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  
+    @media (prefers-color-scheme: dark) {
+      color: #3b82f6;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .logo {
+      height: 32px;
+    }
+  
+    form {
+      gap: 1rem;
+    }
+  
+    button {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+    }
+  }
+  
